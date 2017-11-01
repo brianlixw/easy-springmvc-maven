@@ -10,7 +10,7 @@ public class DemoService {
 		if(username.equals("admin") && password.equals("admin")){
 			return "Login Success！";
 		}else{
-			return "Login Failed,Please Try Again！";
+			return "Login Failed,Please Try Again！:)";
 		}
 	}
 }

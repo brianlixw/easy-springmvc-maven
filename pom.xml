@@ -83,6 +83,27 @@
 	</dependency>
 	<!-- end -->
   </dependencies>
+
+  <repositories>
+    <repository>
+      <id>nexus</id>
+      <name>Nexus3 Repository</name>
+      <!-- 此为仓库地址，应用 group 类型可以相当于同时添加多个仓库地址 -->
+      <url>http://172.16.4.233:8002/repository/maven-public/</url>
+    </repository>
+  </repositories>
+  <distributionManagement>  
+        <repository>  
+            <id>maven-releases</id>  
+            <name>maven releases</name>  
+            <url>http://172.16.4.233:8002/repository/maven-releases/</url>  
+        </repository> 
+        <snapshotRepository>  
+            <id>maven-snapshots</id>  
+            <name>maven snapshots</name>  
+            <url>http://172.16.4.233:8002/repository/maven-snapshots/</url>  
+        </snapshotRepository>  
+  </distributionManagement>  
   
   <properties>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
