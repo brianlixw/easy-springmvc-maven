@@ -1,8 +1,8 @@
 package spring.demo.service;
 
-import static org.junit.Assert.*;
+import static junit.Assert.*;
 
-import org.junit.Test;
+import junit.Test;
 
 public class DemoServiceTest {
 
